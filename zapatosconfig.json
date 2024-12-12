@@ -1,0 +1,6 @@
+{
+    "db": {
+      "connectionString": "postgresql://ai_exam_owner:Xn4VJgq7FATr@ep-lucky-leaf-a1izbhv0.ap-southeast-1.aws.neon.tech/ai_exam?sslmode=require"
+    },
+    "outDir": "./sql"
+  }

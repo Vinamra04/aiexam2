@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .details {
+            list-style-type: none;
+            padding: 0;
+        }
+        .details li {
+            margin-bottom: 10px;
+        }
+        .details li strong {
+            color: #333;
+        }
+        .link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .description {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Scheduled: {{exam_title}}</h1>
+        <p>Dear Student,</p>
+        <p>We are pleased to inform you that the following exam has been scheduled:</p>
+        <ul class="details">
+            <li><strong>Teacher:</strong> {{teacher_name}}</li>
+            <li><strong>Subject:</strong> {{subject}}</li>
+            <li><strong>Duration:</strong> {{duration}} minutes</li>
+            <li><strong>Start Time:</strong> {{start_at}}</li>
+        </ul>
+        <div class="description">
+            <strong>Exam Description:</strong>
+            <p>{{description}}</p>
+        </div>
+        <p>You can access the exam at the following link:</p>
+        <a href="{{unique_link}}" class="link">Access Exam</a>
+        <p>Best of luck!</p>
+        <p>Sincerely,</p>
+        <p>The Exam Coordination Team</p>
+    </div>
+</body>
+</html>
